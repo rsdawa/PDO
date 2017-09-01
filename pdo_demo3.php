@@ -1,12 +1,3 @@
-<!doctype html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>Document</title>
- </head>
- <body>
 <?php
 // 演示PDO结果集对象PDOStatement的使用
 $dsn = 'mysql:host=localhost;port=3306;dbname=php39';
@@ -39,5 +30,3 @@ echo "user_id:{$user_id}<br>user_name:{$user_name}<br>user_pass:{$user_pass}"; /
 // fetch执行一次，游标则下移一行。
 // fetchColumn()较为适合取单个数据的情况。
 ?>  
- </body>
-</html>
