@@ -45,7 +45,6 @@ $mode = PDO :: FETCH_ASSOC;
 * PDO::FETCH_LAZY     结合了 PDO::FETCH_BOTH、PDO::FETCH_OBJ，在它们被调用时创建对象变量
 * 
 * 如果不在 fetch() 中指定返回的结果类型，也可以单独使用 setFetchMode() 方法设定，如：
-
 * ......
 * $sth = $db->query($sql);
 * $sth->setFetchMode(PDO::FETCH_ASSOC);
@@ -66,15 +65,12 @@ echo "</pre>";
 
 /**
 * PDOStatement->fetchAll()
-* 
 * fetchAll() 方法用于把数据从数据集一次性取出并放入数组中。
 
 * 语法：
-
 * PDOStatement->fetchAll([int mode [,int column_index]])
 * 
 * mode 为可选参数，表示希望返回的数组，column_index 表示列索引序号，当 mode 取值 PDO::FETCH_COLUMN 时指定。
-
 * mode 参数可取值如下：
 * 取值                 说明
 * PDO::FETCH_COLUMN    指定返回返回结果集中的某一列，具体列索引由 column_index 参数指定
